@@ -1,3 +1,6 @@
+-- Создать таблицу employees (id. serial,  primary key, employee_name. Varchar(50), not null).
+-- Наполнить таблицу employee 70 строками.
+
 create table employees(
 id serial primary key,
 employee_name varchar (50) not null
@@ -75,6 +78,9 @@ values ('Xavia Edwards'),
        ('Lana Diaz'),
        ('Olida Ramirez');
        
+-- Создать таблицу salary (id. Serial  primary key, monthly_salary. Int, not null). 
+-- Наполнить таблицу salary 15 строками:
+           
  create table salary(
 id serial primary key,
 monthly_salary int not null
@@ -100,7 +106,11 @@ values (1000),
        (2600),
        (2700),
        (2800),
-       (2900);     
+       (2900); 
+       
+-- Создать таблицу employee_salary (id. Serial  primary key, employee_id. Int, not null, unique; salary_id. Int, not null)
+-- Наполнить таблицу employee_salary 40 строками: в 10 строк из 40 вставить несуществующие employee_id
+       
 
 create table employee_salary(
 id serial primary key,
