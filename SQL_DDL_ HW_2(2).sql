@@ -283,7 +283,8 @@ join roles_employee re on e.id = re.employee_id
 join roles r on re.role_id  = r.id 
 join employee_salary es on es.employee_id = e.id 
 join salary s on es.salary_id = s.id 
-where monthly_salary in (1100, 1500, 2000);
+where monthly_salary in (1100, 1500, 2000)
+order by monthly_salary;
 
 
 
