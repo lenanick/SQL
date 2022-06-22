@@ -161,8 +161,12 @@ values (1, 1),
        (79, 20),
        (80, 1);
        
+-- Создать таблицу roles (id. Serial  primary key, role_name. int, not null, unique)
+-- Поменять тип столба role_name с int на varchar(30)
+-- Наполнить таблицу roles 20 строками:
+     
 
-  create table roles(
+ create table roles(
 id serial primary key,
 role_name int not null unique);
 
@@ -190,9 +194,12 @@ values  ('Junior Python developer'),
         ('Junior Automation QA engineer'),
         ('Middle Automation QA engineer'),
         ('Senior Automation QA engineer');    
- 
+        
+-- Создать таблицу roles_employee (id. Serial  primary key, employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id) role_id. Int, not null (внешний ключ для таблицы roles, поле id)
+-- Наполнить таблицу roles_employee 40 строками:
+       
          
- create table roles_employee(
+create table roles_employee(
 id serial primary key,
 employee_id int not null unique,
 role_id int not null,
