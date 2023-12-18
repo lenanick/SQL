@@ -1,5 +1,5 @@
 # SQL
-## Запросы выполнены через клиентское приложении DBeaver
+## 
 
 <img src = "https://repository-images.githubusercontent.com/44662669/f3f5c080-808b-11ea-9713-2bea65875d95" width = "400"/>
 
